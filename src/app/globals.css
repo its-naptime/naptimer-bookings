@@ -25,3 +25,51 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: 'Title'; /* You can name this whatever you want */
+  src: url('/fonts/castlerocks-demo.otf') format('opentype'); /* adjust path and format based on your file */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Body'; /* You can name this whatever you want */
+  src: url('/fonts/ssl.ttf') format('truetype'); /* adjust path and format based on your file */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+textarea {
+  scrollbar-width: thin;  /* Firefox */
+  scrollbar-color: rgba(75, 85, 99, 0.5) transparent;  /* Firefox */
+}
+
+textarea::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(75, 85, 99, 0.5);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background-clip: padding-box;
+}
+
+textarea:hover::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+}
+
+/* Hide scrollbar when not in use */
+textarea::-webkit-scrollbar-thumb:vertical:hover,
+textarea::-webkit-scrollbar-thumb:horizontal:hover {
+  background-color: rgba(156, 163, 175, 0.7);
+}
+
