@@ -1,1 +1,1 @@
-pls visit naptime.ink
+pls check out the [site](naptime.ink)
